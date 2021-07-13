@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href = "/css/styles.css" rel = "stylesheet"/>
+    <title>Przychodnia</title>
+</head>
+<body>
+    <h3>Wprowadź dane nowego pacjenta</h3>
+<form action="#" th:action="@{/patient/addPatient}"
+      th:object="${pacjent}" method="post">
+
+    <p>Imie: <input type="text" th:field="*{imie}"/></p>
+    <p>Nazwisko: <input type="text" th:field="*{nazwisko}"/></p>
+    <p>PESEL: <input type="text" th:field="*{pesel}"/></p>
+    <p>Numer ubezpieczenia: <input type="text" th:field="*{nrUbezpieczenia}"/></p>
+    <p><input type="submit" value="Zatwierdz"/> <input type="reset" value="Zresetuj formularz" /></p>
+</form>
+</body>
+</html>

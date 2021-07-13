@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href = "/css/styles.css" rel = "stylesheet"/>
+    <title>Moja aplikacja</title>
+</head>
+<body>
+<h1>TEST</h1>
+<p>Czy działa?</p>
+<p th:text="${nr}">Tu nic nie ma???</p>
+</body>
+</html>
